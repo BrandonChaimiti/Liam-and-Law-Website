@@ -1,0 +1,16 @@
+.music-video {
+    overflow: hidden;
+    margin-top: 5%;
+    margin-left: 25%;
+    padding-bottom: 50%;
+    position: relative;
+    height: auto;
+  }
+  
+  .music-video iframe {
+    left: 0;
+    top: 0;
+    height: 70%;
+    width: 70%;
+    position: absolute;
+  }

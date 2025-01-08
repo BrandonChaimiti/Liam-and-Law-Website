@@ -1,0 +1,15 @@
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: inherit;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.react-icons {
+    align-items: center;
+    font-size: 1.5rem;
+    color: white;
+    
+}
