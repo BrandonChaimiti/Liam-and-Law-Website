@@ -1,9 +1,10 @@
-import React, { useState } from 'react'
-import "./M_Cards.css"
+import React, { useState } from 'react';
+import "./M_Cards.css"; // Styles for music cards
 
 function Music_Cards() {
-  const [dropdownVisible, setDropdownVisible] = useState(null);
-  
+  const [dropdownVisible, setDropdownVisible] = useState(null); // Tracks the visible dropdown menu
+
+  // Data for each music card stored in an array
   const cardData = [
     {
       id: 1,
@@ -38,16 +39,21 @@ function Music_Cards() {
       songSC: "https://soundcloud.com/liamandlance/warm-up",
     },
   ];
-  
+
   return (
     <div className="cards-container">
       {cardData.map((card) => (
         <div className="card" key={card.id}>
-          <img src={card.image} className="card-image" alt={card.title} />
-          <h2 className="card-title">{card.title}</h2>
-          <button className="card-button" onClick={() => setDropdownVisible (dropdownVisible === card.id ? null : card.id)}>Listen Now</button>
+          <img src={card.image} className="card-image" alt={card.title} /> {/* Card image */}
+          <h2 className="card-title">{card.title}</h2> {/* Card title */}
+          <button
+            className="card-button"
+            onClick={() => setDropdownVisible(dropdownVisible === card.id ? null : card.id)}
+          >
+            Listen Now
+          </button>
           {dropdownVisible === card.id && (
-            <div className="dropdown-menu">
+            <div className="dropdown-menu"> {/* Dropdown with music links */}
               <a href={card.songLinkSpotify}>Spotify</a>
               <a href={card.songLinkAM}>Apple Music</a>
               <a href={card.songSC}>SoundCloud</a>
@@ -59,4 +65,4 @@ function Music_Cards() {
   );
 }
 
-export default Music_Cards
+export default Music_Cards;
