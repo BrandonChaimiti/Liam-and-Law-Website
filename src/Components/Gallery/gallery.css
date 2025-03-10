@@ -13,3 +13,7 @@
     border-radius: 8px; /* Optional: add rounded corners */
     transition: transform 0.3s ease; /* Add hover effect */
 }
+
+.gallery-image:hover {
+    transform: scale(1.1);
+}

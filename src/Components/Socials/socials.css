@@ -13,3 +13,8 @@
     color: white;
     
 }
+
+.react-icons:hover {
+    color: #FF4500;
+    transform: scale(1.3);
+}

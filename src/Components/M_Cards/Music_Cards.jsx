@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'; // Import React and the useState hook
 import "./M_Cards.css"; // Styles for music cards
 
 function Music_Cards() {
@@ -8,11 +8,11 @@ function Music_Cards() {
   const cardData = [
     {
       id: 1,
-      image: "src/assets/covers/marathon_music.jpeg",
-      title: "MARATHON MUSIC",
-      songLinkSpotify: "https://open.spotify.com/track/67r5RKrouXly6WA6xY2CrH",
-      songLinkAM: "https://music.apple.com/gb/album/marathon-music/1714314750?i=1714314751",
-      songSC: "https://soundcloud.com/liamandlance/marathon-music",
+      image: "src/assets/covers/marathon_music.jpeg", // Image for the card
+      title: "MARATHON MUSIC", // Title of the music
+      songLinkSpotify: "https://open.spotify.com/track/67r5RKrouXly6WA6xY2CrH", // Spotify link
+      songLinkAM: "https://music.apple.com/gb/album/marathon-music/1714314750?i=1714314751", // Apple Music link
+      songSC: "https://soundcloud.com/liamandlance/marathon-music", // SoundCloud link
     },
     {
       id: 2,
@@ -42,16 +42,19 @@ function Music_Cards() {
 
   return (
     <div className="cards-container">
+      {/* Map through the cardData array to render each music card */}
       {cardData.map((card) => (
         <div className="card" key={card.id}>
           <img src={card.image} className="card-image" alt={card.title} /> {/* Card image */}
           <h2 className="card-title">{card.title}</h2> {/* Card title */}
+          {/* Button to toggle the dropdown menu for the card */}
           <button
             className="card-button"
             onClick={() => setDropdownVisible(dropdownVisible === card.id ? null : card.id)}
           >
             Listen Now
           </button>
+          {/* Conditionally render the dropdown menu if the current card's dropdown is visible */}
           {dropdownVisible === card.id && (
             <div className="dropdown-menu"> {/* Dropdown with music links */}
               <a href={card.songLinkSpotify}>Spotify</a>
