@@ -17,7 +17,7 @@ function Navbar() {
                 <Link to='/'>Home</Link> {/* Link to the Home page */}
                 <Link to='/music'>Music</Link> {/* Link to the Music page */}
                 <Link to='/videos'>Videos</Link> {/* Link to the Videos page */}
-                <Link to='/about'>About us</Link> {/* Link to the About Us page */}
+                <Link to='/about'>About</Link> {/* Link to the About Us page */}
             </nav>
         </header>
     </div>

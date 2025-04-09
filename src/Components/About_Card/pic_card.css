@@ -41,6 +41,16 @@
     font-size: 20px;
     flex-direction: vertical;
     text-align: left;
+    animation: fadeInText ease 2s;
+}
+
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .footer {
