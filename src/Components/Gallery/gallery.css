@@ -1,19 +1,32 @@
 /* Gallery.css */
+
+/* Container for the image gallery */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Smaller columns */
+    gap: 10px; /* Reduced spacing */
     margin-top: 20px;
+    padding: 0 10px; /* Add padding for mobile edge spacing */
 }
 
+/* Style for each gallery image */
 .gallery-image {
-    width: 50%;
+    width: 50%; /* Use full width of grid cell */
     height: auto;
     object-fit: cover;
-    border-radius: 8px; /* Optional: add rounded corners */
-    transition: transform 0.3s ease; /* Add hover effect */
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.3s ease;
 }
 
+/* Hover effect on images */
 .gallery-image:hover {
-    transform: scale(1.1);
+    transform: scale(1.05); /* Slight zoom */
+}
+
+/* Responsive tweaks for very small screens */
+@media (max-width: 480px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 8px;
+    }
 }

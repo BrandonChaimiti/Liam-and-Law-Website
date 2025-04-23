@@ -1,27 +1,34 @@
-import React from 'react'; // Import React library to create components
-import { Link } from 'react-router-dom'; // Import Link component for navigation
-import './navbar.css'; // Import the CSS file for styling the Navbar component
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import './navbar.css';
 
-// Define the Navbar functional component
 function Navbar() {
+  // State to toggle menu visibility on mobile
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-    <div>
-        {/* Header section containing the logo and navigation links */}
-        <header className="header">
-            {/* Logo area */}
-            <a className="logo">LIAM AND LANCE</a>
-            
-            {/* Navigation menu */}
-            <nav className="nav">
-                {/* Navigation links using React Router's Link component for client-side routing */}
-                <Link to='/'>Home</Link> {/* Link to the Home page */}
-                <Link to='/music'>Music</Link> {/* Link to the Music page */}
-                <Link to='/videos'>Videos</Link> {/* Link to the Videos page */}
-                <Link to='/about'>About</Link> {/* Link to the About Us page */}
-            </nav>
-        </header>
-    </div>
+    <header className="header">
+      {/* Logo */}
+      <a className="logo">LIAM AND LANCE</a>
+
+      {/* Hamburger button (visible only on mobile) */}
+      <button
+        className="hamburger"
+        onClick={() => setMenuOpen(!menuOpen)}
+        aria-label="Toggle navigation menu"
+      >
+        ☰
+      </button>
+
+      {/* Navigation menu */}
+      <nav className={`nav ${menuOpen ? 'open' : ''}`}>
+        <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
+        <Link to="/music" onClick={() => setMenuOpen(false)}>Music</Link>
+        <Link to="/videos" onClick={() => setMenuOpen(false)}>Videos</Link>
+        <Link to="/about" onClick={() => setMenuOpen(false)}>About</Link>
+      </nav>
+    </header>
   );
 }
 
-export default Navbar; // Export the Navbar component so it can be used in other parts of the application
+export default Navbar;

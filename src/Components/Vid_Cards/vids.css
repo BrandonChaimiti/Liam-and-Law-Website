@@ -1,16 +1,20 @@
+/* Wrapper around the embedded YouTube video */
 .music-video {
-    overflow: hidden;
-    margin-top: 5%;
-    margin-left: 25%;
-    padding-bottom: 50%;
-    position: relative;
-    height: auto;
-  }
-  
-  .music-video iframe {
-    left: 0;
-    top: 0;
-    height: 70%;
-    width: 70%;
-    position: absolute;
-  }
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  margin: 40px auto; /* Centered on all screen sizes */
+  max-width: 800px;   /* Optional: max size on large screens */
+  width: 90%;         /* Responsive width */
+}
+
+/* The iframe inside the wrapper */
+.music-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}

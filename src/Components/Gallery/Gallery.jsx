@@ -5,10 +5,10 @@ import './gallery.css'; // Import the CSS file for styling the Gallery component
 function Gallery() {
     // Array of image paths that will be displayed in the gallery
     const images = [
-        'src/assets/showImages/Chillin.jpg',
-        'src/assets/showImages/LitStudioPic.jpg',
-        'src/assets/showImages/Chill_Studio_Pic.jpg',
-        'src/assets/showImages/Lance_Dark_Background.jpg'
+        '/showImages/Chillin.jpg',
+        '/showImages/LitStudioPic.jpg',
+        '/showImages/Chill_Studio_Pic.jpg',
+        '/showImages/Lance_Dark_Background.jpg'
     ];
     
     return (

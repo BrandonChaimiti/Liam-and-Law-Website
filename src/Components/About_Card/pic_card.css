@@ -1,62 +1,94 @@
 /* About Card.css */
 .about-container {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 40px;
-    max-width: 2000px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 80px 20px;
+    max-width: 1200px;
     margin: auto;
-}
-
-.picture {
+    gap: 30px; /* Adds space between picture and bio on wrap */
+  }
+  
+  /* Picture card section */
+  .picture {
     flex: 1;
-    width: 400px;
-    height: auto;
-    border-radius: 5%;
-    padding: 30px;
-    margin-top: 50px;
+    min-width: 280px;
+    max-width: 400px;
+    border-radius: 10px;
+    padding: 20px;
     text-align: center;
     box-shadow: 5px 5px 5px black;
     background-color: gray;
-}
-
-.picture .card-image {
-    width: 400px;
+  }
+  
+  /* Image inside picture card */
+  .picture .card-image {
+    width: 100%;
     height: auto;
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 10px;
-}
-
-.picture .picture-title {
+  }
+  
+  /* Picture title text */
+  .picture .picture-title {
     font-family: 'Times New Roman', Times, serif;
     color: #fff;
-    font-size: 30px;
-}
-
-.bio {
+    font-size: 26px;
+  }
+  
+  /* Bio section */
+  .bio {
     flex: 2;
-    margin-left: 20px;
     color: white;
-    font-size: 20px;
-    flex-direction: vertical;
+    font-size: 18px;
     text-align: left;
     animation: fadeInText ease 2s;
-}
-
-@keyframes fadeInText {
+    min-width: 280px;
+    max-width: 700px;
+  }
+  
+  /* Text fade-in animation */
+  @keyframes fadeInText {
     0% {
-        opacity: 0;
+      opacity: 0;
     }
     100% {
-        opacity: 1;
+      opacity: 1;
     }
-}
-
-.footer {
+  }
+  
+  /* Footer styling */
+  .footer {
     text-align: center;
-    font-size: 18px;
-    padding: 0;
-    margin-bottom: 0;
-    margin-top: 10px;
-}
+    font-size: 16px;
+    padding: 20px 10px;
+    margin-top: 20px;
+  }
+  
+  /* ------------------------------------------
+     📱 Responsive styles for mobile (≤ 768px)
+  ------------------------------------------- */
+  @media (max-width: 768px) {
+    .about-container {
+      flex-direction: column;
+      padding: 60px;
+    }
+  
+    .picture,
+    .bio {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .picture .picture-title {
+      font-size: 22px;
+    }
+  
+    .bio {
+      font-size: 16px;
+      text-align: justify;
+    }
+  }
+  

@@ -6,7 +6,7 @@ function Picture_Card() {
   return (
     <div className='about-container'>
       <div className="picture">
-        <img src="src/assets/showImages/SideBySide.jpg" className="card-image" alt="Liam Law and Lance Magic" /> {/* Card image */}
+        <img src="/showImages/SideBySide.jpg" className="card-image" alt="Liam Law and Lance Magic" /> {/* Card image */}
           <h2 className="picture-title">Liam Law and Lance Magic</h2> {/* Card title */}
       </div>
       <div className='bio'>
