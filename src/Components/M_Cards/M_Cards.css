@@ -44,7 +44,7 @@
 .card .card-button {
     border-radius: 8px;
     color: black;
-    background-color: #FF6F61;
+    background-color: #ffffff;
     font-weight: bold;
     padding: 10px 16px;
     margin-top: 10px;
@@ -61,7 +61,7 @@
 
 /* Dropdown with music links */
 .dropdown-menu {
-    background-color: #00796B;
+    background-color: #001f3f;
     color: #FAFAFA;
     padding: 8px 12px;
     font-size: 18px;

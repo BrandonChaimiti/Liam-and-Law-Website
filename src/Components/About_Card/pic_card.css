@@ -7,7 +7,7 @@
     padding: 80px 20px;
     max-width: 1200px;
     margin: auto;
-    gap: 30px; /* Adds space between picture and bio on wrap */
+    gap: 70px; /* Adds space between picture and bio on wrap */
   }
   
   /* Picture card section */

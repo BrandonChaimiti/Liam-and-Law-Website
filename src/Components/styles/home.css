@@ -31,6 +31,7 @@
 @media (max-width: 768px) {
     .video-container {
         height: 40vh; /* Reduce video height on smaller screens */
+        width: 100vw; /* Ensure full viewport width */
     }
 
     .home-music-video {
