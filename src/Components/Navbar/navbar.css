@@ -59,19 +59,20 @@ html, body {
    📱 Mobile Styles (≤ 768px)
 --------------------------------- */
 @media (max-width: 768px) {
-  /* Stack header items */
   .header {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  /* Show hamburger button */
+  .logo {
+    font-size: 18px; /* 👈 Add this to shrink logo on mobile */
+  }
+
   .hamburger {
     display: block;
     margin-left: auto;
   }
 
-  /* Hide nav menu by default */
   .nav {
     display: none;
     flex-direction: column;
@@ -82,7 +83,6 @@ html, body {
     margin-top: 10px;
   }
 
-  /* Show nav when menuOpen is true */
   .nav.open {
     display: flex;
   }
