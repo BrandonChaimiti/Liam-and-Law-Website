@@ -8,7 +8,7 @@ function Music_Cards() {
   const cardData = [
     {
       id: 1,
-      image: "/assets/covers/marathon_music.jpeg", // Image for the card
+      image: "/assets/covers/marathon_music.JPEG", // Image for the card
       title: "MARATHON MUSIC", // Title of the music
       songLinkSpotify: "https://open.spotify.com/track/67r5RKrouXly6WA6xY2CrH", // Spotify link
       songLinkAM: "https://music.apple.com/gb/album/marathon-music/1714314750?i=1714314751", // Apple Music link
