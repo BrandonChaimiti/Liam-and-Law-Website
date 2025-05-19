@@ -66,6 +66,7 @@ html, body {
 
   .logo {
     font-size: 18px; /* 👈 Add this to shrink logo on mobile */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
 
   .hamburger {
