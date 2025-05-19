@@ -8,7 +8,7 @@ function Music_Cards() {
   const cardData = [
     {
       id: 1,
-      image: "src/assets/covers/marathon_music.jpeg", // Image for the card
+      image: "/assets/covers/marathon_music.jpeg", // Image for the card
       title: "MARATHON MUSIC", // Title of the music
       songLinkSpotify: "https://open.spotify.com/track/67r5RKrouXly6WA6xY2CrH", // Spotify link
       songLinkAM: "https://music.apple.com/gb/album/marathon-music/1714314750?i=1714314751", // Apple Music link
@@ -16,7 +16,7 @@ function Music_Cards() {
     },
     {
       id: 2,
-      image: "src/assets/covers/12AM.jpeg",
+      image: "/assets/covers/12AM.jpeg",
       title: "12 AM",
       songLinkSpotify: "https://open.spotify.com/track/3xUhMsj8NIkm8aHMbxT719",
       songLinkAM: "https://music.apple.com/gb/album/12am/1726997627?i=1726997628",
@@ -24,7 +24,7 @@ function Music_Cards() {
     },
     {
       id: 3,
-      image: "src/assets/covers/2AM.PNG",
+      image: "/assets/covers/2AM.PNG",
       title: "2 AM",
       songLinkSpotify: "https://open.spotify.com/track/1UnzdjEWdlvGvO0JUqoq3G",
       songLinkAM: "https://music.apple.com/gb/album/2am/1774743362?i=1774743363",
@@ -32,7 +32,7 @@ function Music_Cards() {
     },
     {
       id: 4,
-      image: "src/assets/covers/Warm_Up.jpeg",
+      image: "/assets/covers/Warm_Up.jpeg",
       title: "Warm Up",
       songLinkSpotify: "https://open.spotify.com/track/6Pj3cQlpyJUjiOg2p2uHDm",
       songLinkAM: "https://music.apple.com/gb/album/warm-up-single/1742651949",
